@@ -1,0 +1,113 @@
+/*Total Body Section */
+body{
+  padding:2%;
+  background-image:linear-gradient(to left, #09203F , #537895);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  font-family: "Roboto";
+}
+h1{
+  color:#ffffff;
+  font-size: 36px;box-shadow: 2px 1px 2px 2px yellowgreen;
+}
+h1:hover{
+  background-color: transparent;
+  font-size: 36px;box-shadow: 2px 1px 2px 2px transparent;
+  cursor: pointer;
+
+}
+.calculator {
+    border-radius: 5px;
+    width: 350px;
+    padding: 10px;
+    border:1px solid yellowgreen;
+    box-shadow: 0px 0px 3px 5px olivedrab;
+}
+.screen {
+  border: 0px solid;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#result {
+  width: 100%;
+  font-size: 24px;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: right;
+  border-radius: 3px;
+  height:3rem;
+  border:0px solid;
+  box-shadow: 4px 4px 0px 0px lime;
+}
+#result:hover{
+  background-color: transparent;
+  border:0px ;
+  cursor: pointer;
+  color:#ffffff;
+  box-shadow: 0px 0px 0px 0px;
+}
+/*Button Section */
+.buttons button {
+  font-size: 20px;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  width: 80px;
+  height: 80px;
+  font-size:30px;
+}
+  button{
+    box-shadow: 4px 4px 0px 0rem limegreen;
+    margin:5px;
+  }
+  .buttons button:hover {
+    cursor: pointer;
+    transform: skewX(13deg);
+    transform: translate(-20px,12px,20px);
+  }
+  .buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buttons button.operator {
+    background-color: #ccc;
+    color: lightsalmon;
+  }
+  .buttons button.operator:active {
+    background-color:yellow;
+    color: #fff;
+  }
+  .buttons button:hover {
+    background-color: limegreen;
+    color:#ffffff;
+    border:dashed 2px firebrick;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3rem 0px limegreen;
+    border-bottom-style: inherit;
+    border-left-style: inherit;
+  }
+  .buttons button:active {
+    background-color: navy;
+    color:aqua;
+    border-radius: 50%;
+    transform: rotate3d(45deg);
+    border:dashed 2px skyblue;
+    border-top-style: inherit;
+    border-right-style: inherit;
+  }
+
+button.clear:active{
+  background-color: red;
+}
+button.value:active{
+  background-color: lime;
+}

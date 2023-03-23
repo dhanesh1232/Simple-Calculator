@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Calculator</h1>
+  <div class="calculator">
+    <div class="screen">
+      <input type="text" id="result" readonly >
+    </div>
+    <table class="buttons">
+      <tr>
+        <td><button value="←" class="operator btn">&#8592</button></td>
+        <td><button value="(" class="operator btn">(</button></td>
+        <td><button value=")" class="operator btn">)</button></td>
+        <td><button class="operator btn" value="%">%</button></td>
+      </tr>
+      <tr>
+        <td><button value="7" class="btn value">7</button></td>
+        <td><button value="8" class="btn value">8</button></td>
+        <td><button value="9" class="btn value">9</button></td>
+        <td><button class="operator btn" value="+">+</button></td>
+      </tr>
+      <tr>
+        <td><button value="4" class="btn value">4</button></td>
+        <td><button value="5" class="btn value">5</button></td>
+        <td><button value="6" class="btn value">6</button></td>
+        <td><button class="operator btn" value="-">-</button></td>
+      </tr>
+      <tr>
+        <td><button value="1" class="btn value">1</button></td>
+        <td><button value="2" class="btn value">2</button></td>
+        <td><button value="3" class="btn value">3</button></td>
+        <td><button class="operator btn" value="*">*</button></td>
+      </tr>
+      <tr>
+        <td><button id="clear" class="btn clear" value="C">C</button></td>
+        <td><button value="0" class="btn value">0</button></td>
+        <td><button class="operator btn" value="=">=</button></td>
+        <td><button class="operator btn" value="/">/</button></td>
+      </tr>
+    </table>
+  </div>
+  <script src="style.js"></script>
+</body>
+</html>
